@@ -71,10 +71,10 @@ This creates an input field with type as number. like this you can create follow
 
 Example:
 
-`<form form-for="" model="user" name="myForm">`
-  `<widget as="text" name="name" label="Name" required="true" min-len="03"></widget> `
-  `<widget as="number" name="phone" label="Phone Number" required="true" max-len="10" ></widget>`
-  `<widget as="submit" value="Save" ></widget>`
+`<form form-for="" model="user" name="myForm">` \n
+  `<widget as="text" name="name" label="Name" required="true" min-len="03"></widget> ` \n
+  `<widget as="number" name="phone" label="Phone Number" required="true" max-len="10" ></widget>` \n
+  `<widget as="submit" value="Save" ></widget>` \n
 `</form>`
 
 ### select (Dropdown)
@@ -85,7 +85,7 @@ To create a dropdown/select element.
 
 Pass a `$scope` object to the items attribute to render the options in select element.
 
-```javascript $scope.colorsList = [
+```$scope.colorsList = [
                     {
                       "name" : "All Colors",
                       "value" : "all"
