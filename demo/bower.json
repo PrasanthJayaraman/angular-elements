@@ -1,0 +1,16 @@
+{
+  "name": "angularwidgets",
+  "version": "0.1.0",
+  "authors": [
+    {
+      "name": "Prasanth Jayaraman",
+      "email": "prasanthj@outlook.com"
+    }
+  ],
+  "dependencies": {
+    "angular": "~1.4.0",
+    "angular-route": "~1.5.5",
+    "bootstrap": "~3.3.6",
+    "jquery": "~1.9.1"
+  }
+}
