@@ -1,0 +1,25 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.13.3",
+    "http-server": "^0.8.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PrasanthJayaraman/angular-widgets.git"
+  },
+  "author": "prasanth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PrasanthJayaraman/angular-widgets/issues"
+  },
+  "homepage": "https://github.com/PrasanthJayaraman/angular-widgets#readme"
+}
