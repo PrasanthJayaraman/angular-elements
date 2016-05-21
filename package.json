@@ -5,7 +5,11 @@
   "main": "server.js",
   "dependencies": {
     "express": "^4.13.3",
-    "http-server": "^0.8.5"
+    "http-server": "^0.8.5",
+    "angular": "~1.4.0",
+    "angular-route": "~1.5.5",
+    "bootstrap": "~3.3.6",
+    "jquery": "~1.9.1"
   },
   "devDependencies": {},
   "scripts": {
