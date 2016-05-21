@@ -46,7 +46,11 @@ That's all you are good to go with implementation of angular widget.
 
 #### Create a form
 
-```<form form-for="" model="user" name="myForm"></form> ```
+```html 
+ <pre>
+  <form form-for="" model="user" name="myForm"></form>
+ </pre>
+ ```
 
 Here ``` form-for ``` is the angular widget attribute that you must specify, ``` model ``` is the $scope object you are parsing with the whole form. ``` name ``` is the form name you are using and this is also must attribute.
 
@@ -56,7 +60,11 @@ Then create all field within the form.
 
 We create an input field using ```<widget></widget>``` tag. ```as="text" ``` which works as `type="text"`, ```name="phone" ``` this name attribute works as ``` ng-model & name ``` of the element, ``` label="Phone Number" ``` helps to render a label text to the field.
 
-``` <widget as="number" name="phone" label="Phone Number" ></widget> ```
+```html
+<pre>
+  <widget as="number" name="phone" label="Phone Number" ></widget> 
+</pre>
+```
 
 This creates an input field with type as number. like this you can create following input fields.
 
@@ -85,7 +93,11 @@ Example:
 
 To create a dropdown/select element.
 
-`<widget-drop title="Select your favourite color" model="color" items="colorsList"></widget-drop>`
+```html
+<pre>
+  <widget-drop title="Select your favourite color" model="color" items="colorsList"></widget-drop>
+</pre>
+```
 
 Pass a `$scope` object to the items attribute to render the options in select element.
 
@@ -100,7 +112,11 @@ Pass a `$scope` object to the items attribute to render the options in select el
 
 To create one or more checkbox use this.
 
-`<widget-check title="Countries you travelled" model="countries" items="countryList"></widget-check>`
+```html
+<pre>
+  <widget-check title="Countries you travelled" model="countries" items="countryList"></widget-check>
+</pre>
+```
 
 Send the `$scope` object to items to render the number of checkboxes.
 
@@ -108,7 +124,11 @@ Send the `$scope` object to items to render the number of checkboxes.
 
 To create one or more radio button use this.
 
-`<widget-radio title="Gender" model="gender" items="genderList"></widget-radio>`
+```html
+<pre>
+  <widget-radio title="Gender" model="gender" items="genderList"></widget-radio>
+<pre>
+```
 
 Send the `$scope` object to items to render the number of radio buttons.
 
@@ -122,40 +142,63 @@ We will discuss how to do validation using angular widgets in a simple way than 
 
 This attribute will help to tell the angular widget that this field is mandatory and cannot avoided.
 
-``` <widget as="number" name="phone" label="Phone Number" required="true"></widget> ```
+```html
+<pre>
+  <widget as="number" name="phone" label="Phone Number" required="true"></widget> 
+<pre>
+```
 
 #### min-len
 
 This will help you to set minimum length that need to be passed to the text field. It shows error message dynamically using the label name to the user. 
 
-``` <widget as="number" name="phone" label="Phone Number" required="true" min-len="4" ></widget> ```
+```html
+<pre>
+  <widget as="number" name="phone" label="Phone Number" required="true" min-len="4"></widget> 
+<pre>
+```
 
 #### max-len
 
 This will help you to set maximum length that need to passed on the input field. 
 
-``` <widget as="number" name="phone" label="Phone Number" required="true" max-len="10" ></widget> ```
+```html
+<pre>
+  <widget as="number" name="phone" label="Phone Number" required="true" max-len="10"></widget> 
+<pre>
+```
 
 #### min-value
 
 This attribute help us to set minimum value that needs to be passed to an input field. It shows error if it exceeds minimum value.
 
-``` <widget as="number" name="age" label="Age" required="true" min-value="4" ></widget> ```
+```html
+<pre>
+  <widget as="number" name="age" label="Age" required="true" min-value="4" ></widget> 
+</pre>
+```
 
 #### max-value
 
 This help us to set maximum value that needs to be passed to an input field. So it shows error if it exceeds maximum value.
 
-``` <widget as="number" name="age" label="Age" required="true" max-value="45" ></widget> ```
+```html
+<pre>
+  <widget as="number" name="age" label="Age" required="true" max-value="80" ></widget> 
+</pre>
+```
 
 
 #### match
 
 This helps to match two fields and shows error if it deosn't. This can be used in any fields. 
 
-``` <widget as="password" name="password" label="Password" required="true" ></widget> ```
-
-``` <widget as="password" name="cpassword" label="Confirm Password" required="true" match="password"></widget> ```
+```html
+<pre>
+  <widget as="password" name="password" label="Password" required="true" ></widget>
+  <widget as="password" name="cpassword" label="Confirm Password" required="true" match="password"></widget>
+</pre>
+```
 
 These validations are common for all the input fields.
 
