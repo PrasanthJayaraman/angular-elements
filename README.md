@@ -37,7 +37,9 @@ First create your angularJs project in your own way. Then include ```angularwidg
 
 Then include our module in your main module.
 
-``` var app = angular.module('yourApp', ['angularWidgets']); ```
+```javascript
+  var app = angular.module('yourApp', ['angularWidgets']); 
+```
 
 That's all you are good to go with implementation of angular widget.
 
@@ -59,9 +61,7 @@ Then create all field within the form.
 We create an input field using ```<widget></widget>``` tag. ```as="text" ``` which works as `type="text"`, ```name="phone" ``` this name attribute works as ``` ng-model & name ``` of the element, ``` label="Phone Number" ``` helps to render a label text to the field.
 
 ```html
-<pre>
   <widget as="number" name="phone" label="Phone Number" ></widget> 
-</pre>
 ```
 
 This creates an input field with type as number. like this you can create following input fields.
@@ -78,13 +78,11 @@ This creates an input field with type as number. like this you can create follow
 Example:
 
 ```html 
-<pre>
   <form form-for="" model="user" name="myForm">
     <widget as="text" name="name" label="Name" required="true" min-len="03"></widget> 
     <widget as="number" name="phone" label="Phone Number" required="true" max-len="10" ></widget>
     <widget as="submit" value="Save" ></widget>
   </form>
-</pre>
 ```
 
 ### select (Dropdown)
@@ -92,28 +90,26 @@ Example:
 To create a dropdown/select element.
 
 ```html
-<pre>
   <widget-drop title="Select your favourite color" model="color" items="colorsList"></widget-drop>
-</pre>
 ```
 
 Pass a `$scope` object to the items attribute to render the options in select element.
 
-```$scope.colorsList = [
+```javascript
+$scope.colorsList = [
                     {
                       "name" : "All Colors",
                       "value" : "all"
                     }
-  ] ```
+  ] 
+```
 
 ### Checkbox
 
 To create one or more checkbox use this.
 
 ```html
-<pre>
   <widget-check title="Countries you travelled" model="countries" items="countryList"></widget-check>
-</pre>
 ```
 
 Send the `$scope` object to items to render the number of checkboxes.
@@ -123,9 +119,7 @@ Send the `$scope` object to items to render the number of checkboxes.
 To create one or more radio button use this.
 
 ```html
-<pre>
   <widget-radio title="Gender" model="gender" items="genderList"></widget-radio>
-<pre>
 ```
 
 Send the `$scope` object to items to render the number of radio buttons.
@@ -141,9 +135,7 @@ We will discuss how to do validation using angular widgets in a simple way than 
 This attribute will help to tell the angular widget that this field is mandatory and cannot avoided.
 
 ```html
-<pre>
   <widget as="number" name="phone" label="Phone Number" required="true"></widget> 
-<pre>
 ```
 
 #### min-len
@@ -151,9 +143,7 @@ This attribute will help to tell the angular widget that this field is mandatory
 This will help you to set minimum length that need to be passed to the text field. It shows error message dynamically using the label name to the user. 
 
 ```html
-<pre>
   <widget as="number" name="phone" label="Phone Number" required="true" min-len="4"></widget> 
-<pre>
 ```
 
 #### max-len
@@ -161,9 +151,7 @@ This will help you to set minimum length that need to be passed to the text fiel
 This will help you to set maximum length that need to passed on the input field. 
 
 ```html
-<pre>
   <widget as="number" name="phone" label="Phone Number" required="true" max-len="10"></widget> 
-<pre>
 ```
 
 #### min-value
@@ -171,9 +159,7 @@ This will help you to set maximum length that need to passed on the input field.
 This attribute help us to set minimum value that needs to be passed to an input field. It shows error if it exceeds minimum value.
 
 ```html
-<pre>
   <widget as="number" name="age" label="Age" required="true" min-value="4" ></widget> 
-</pre>
 ```
 
 #### max-value
@@ -181,9 +167,7 @@ This attribute help us to set minimum value that needs to be passed to an input 
 This help us to set maximum value that needs to be passed to an input field. So it shows error if it exceeds maximum value.
 
 ```html
-<pre>
   <widget as="number" name="age" label="Age" required="true" max-value="80" ></widget> 
-</pre>
 ```
 
 
@@ -192,10 +176,8 @@ This help us to set maximum value that needs to be passed to an input field. So 
 This helps to match two fields and shows error if it deosn't. This can be used in any fields. 
 
 ```html
-<pre>
   <widget as="password" name="password" label="Password" required="true" ></widget>
   <widget as="password" name="cpassword" label="Confirm Password" required="true" match="password"></widget>
-</pre>
 ```
 
 These validations are common for all the input fields.
