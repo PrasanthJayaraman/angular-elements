@@ -47,9 +47,7 @@ That's all you are good to go with implementation of angular widget.
 #### Create a form
 
 ```html 
- <pre>
   <form form-for="" model="user" name="myForm"></form>
- </pre>
  ```
 
 Here ``` form-for ``` is the angular widget attribute that you must specify, ``` model ``` is the $scope object you are parsing with the whole form. ``` name ``` is the form name you are using and this is also must attribute.
