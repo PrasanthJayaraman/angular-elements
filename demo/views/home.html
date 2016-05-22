@@ -27,17 +27,17 @@
         <br>
         <widget as="submit" value="Save" ></widget>
         <br>
-        <widget-drop title="Select your favourite color" model="user.color" items="colorsList"></widget-drop>
+        <widget-drop title="Select your favourite color" model="color" items="colorsList"></widget-drop>
         <br>
-        <pre style="font-weight:600">color : {{user.color}}</pre>
+        <pre style="font-weight:600">color : {{color}}</pre>
         <br>
-        <widget-radio title="Gender" name="gender" model="user.gender" items="genderList"></widget-radio>
+        <widget-radio title="Gender" name="gender" model="gender" items="genderList"></widget-radio>
         <br>
-        <pre style="font-weight:600">gender : {{user.gender | json}}</pre>
+        <pre style="font-weight:600">gender : {{gender | json}}</pre>
         <br>
-        <widget-check title="Countries you travelled" model="user.countries" items="countryList"></widget-check>
+        <widget-check title="Countries you travelled" model="countries" items="countryList"></widget-check>
         <br>
-        <pre style="font-weight:600">countries : {{user.countries | json}}</pre>
+        <pre style="font-weight:600">countries : {{countries | json}}</pre>
         <br>
       </form>
     </div>
