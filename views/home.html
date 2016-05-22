@@ -6,17 +6,12 @@
   <div class="panel panel-default">
     <div class="panel-body">
       <h3>Form</h3>
-      <p>* are required fields.</p>
       <form form-for="" model="user" name="myForm">
         <widget as="text" name="fname" label="First Name" required="true" min-len="2" max-len="20"></widget>
         <br>
         <widget as="text" name="lname" label="Last Name"></widget>
         <br>
         <widget as="number" name="age" label="Age" required="true" min-value="05" max-value="80"></widget>
-        <br>
-        <widget as="tel" name="phone" label="Phone Number" required="true" max-len="10"></widget>
-        <br>
-        <widget as="date" name="dob" label="Date of Birth" required="true" ></widget>
         <br>
         <widget as="email" name="email" label="Email Address" required="true"></widget>
         <br>
@@ -26,23 +21,23 @@
         <br>
         <widget as="url" name="website" label="Website" required="true"></widget>
         <br>
-        <widget as="textarea" name="comments" label="Comments" max-len="150"></widget>
+        <widget as="textarea" name="comments" label="Comments" rows="4" max-len="150"></widget>
         <br>
         <pre style="font-weight:600">user : {{user | json}}</pre>
         <br>
         <widget as="submit" value="Save" ></widget>
         <br>
-        <widget-drop title="Select your favourite color" model="color" items="colorsList"></widget-drop>
+        <widget-drop title="Select your favourite color" model="user.color" items="colorsList"></widget-drop>
         <br>
-        <pre style="font-weight:600">color : {{color}}</pre>
+        <pre style="font-weight:600">color : {{user.color}}</pre>
         <br>
-        <widget-radio title="Gender" model="gender" items="genderList"></widget-radio>
+        <widget-radio title="Gender" name="gender" model="user.gender" items="genderList"></widget-radio>
         <br>
-        <pre style="font-weight:600">gender : {{gender | json}}</pre>
+        <pre style="font-weight:600">gender : {{user.gender | json}}</pre>
         <br>
-        <widget-check title="Countries you travelled" model="countries" items="countryList"></widget-check>
+        <widget-check title="Countries you travelled" model="user.countries" items="countryList"></widget-check>
         <br>
-        <pre style="font-weight:600">countries : {{countries | json}}</pre>
+        <pre style="font-weight:600">countries : {{user.countries | json}}</pre>
         <br>
       </form>
     </div>
