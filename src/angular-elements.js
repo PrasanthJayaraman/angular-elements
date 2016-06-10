@@ -1,7 +1,7 @@
 
 
   //Angular Widgets Wrapper
-  angular.module('angularWidgets', ['formDirective', 'matchDirective', 'minMaxDirective', 'widgetDirective']);
+  angular.module('angularElements', ['formDirective', 'matchDirective', 'minMaxDirective', 'widgetDirective']);
 
   //form directive to create form
   angular.module('formDirective', [])

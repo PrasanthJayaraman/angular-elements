@@ -1,4 +1,4 @@
-# angular-widgets
+# angular-elements
 
 An AngularJS wrapper to make your AngularJS rendering and validation very simple and easy.. Developed from scratch myself.
 
@@ -21,11 +21,11 @@ You can run the demo i created by cloning the git repository.
 
 2. Open cmd prompt or terminal in you machine and locate the terminal to the repo cloned --> demo folder.
 
-3. Type ``` bower install ``` so it will install necessary bower components and type ``` http-server -o ``` to open in your web browser. This will take you to ``` http://localhost:1234/#/home ```. You can experience the demo of angular widgets there.
+3. Type ``` bower install ``` so it will install necessary bower components and type ``` http-server -o ``` to open in your web browser. This will take you to ``` http://localhost:1234/#/home ```. You can experience the demo of angular elements there.
 
 Note: if http-server -o doesn't work then you do not have http-server  installed on your machine. So install http-server using ``` npm install http-server -g``` on your terminal.
 
-Angular widgets need bootstrap to render a decent design.
+Angular elements need bootstrap to render a decent design.
 
 ___
 
@@ -33,12 +33,12 @@ ___
 
 ## How to Include
 
-First create your angularJs project in your own way. Then include ```angularwidgets.css ``` after bootstarp css files and include ``` angularwidgets.js ``` after angularjs file in your index.html.
+First create your angularJs project in your own way. Then include ```angular-elements.css ``` after bootstarp css files and include ``` angular-elements.js ``` after angularjs file in your index.html.
 
 Then include our module in your main module.
 
 ```javascript
-  var app = angular.module('yourApp', ['angularWidgets']);
+  var app = angular.module('yourApp', ['angularElements']);
 ```
 
 That's all you are good to go with implementation of angular widget.
@@ -128,7 +128,7 @@ Send the `$scope` object to items to render the number of radio buttons.
 ___
 
 ## Validation
-We will discuss how to do validation using angular widgets in a simple way than any other validation library.
+We will discuss how to do validation using angular elements in a simple way than any other validation library.
 
 #### required
 
