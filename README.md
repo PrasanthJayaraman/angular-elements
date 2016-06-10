@@ -2,30 +2,16 @@
 
 An AngularJS wrapper to make your AngularJS rendering and validation very simple and easy.. Developed from scratch myself.
 
-_version 0.1.0_
+_version 0.0.2_
 
-Check this [live demo](http://angularwidgets.herokuapp.com/#/home)
+Check this [live demo](http://angularelements.herokuapp.com/#/home)
 
 
 This library is capable of creating form elements like text, number, url, email, password, tel, date, radio, checkbox, submit, button and select.
 
 Text, number, url, email, password, tel, date validation will be automatically done to each field if you specify the necessary attribute.
 
-___
-
-## How to run the demo
-
-You can run the demo i created by cloning the git repository.
-
-1. Clone the repository using git commands.
-
-2. Open cmd prompt or terminal in you machine and locate the terminal to the repo cloned --> demo folder.
-
-3. Type ``` bower install ``` so it will install necessary bower components and type ``` http-server -o ``` to open in your web browser. This will take you to ``` http://localhost:1234/#/home ```. You can experience the demo of angular elements there.
-
-Note: if http-server -o doesn't work then you do not have http-server  installed on your machine. So install http-server using ``` npm install http-server -g``` on your terminal.
-
-Angular elements need bootstrap to render a decent design.
+Angular elements requires bootstrap to render a decent design.
 
 ___
 
