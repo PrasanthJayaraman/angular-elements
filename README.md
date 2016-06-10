@@ -87,7 +87,7 @@ $scope.colorsList = [
                       "name" : "All Colors",
                       "value" : "all"
                     }
-  ]
+                  ]
 ```
 
 ### Checkbox
@@ -100,6 +100,15 @@ To create one or more checkbox use this.
 
 Send the `$scope` object to items to render the number of checkboxes.
 
+```javascript
+$scope.countryList = [
+                    {
+                      "name" : "India",
+                      "value" : "india"
+                    }
+                  ]
+```
+
 ### Radio Button
 
 To create one or more radio button use this.
@@ -110,6 +119,14 @@ To create one or more radio button use this.
 
 Send the `$scope` object to items to render the number of radio buttons.
 
+```javascript
+$scope.genderList = [
+                    {
+                      "name" : "Male",
+                      "value" : "male"
+                    }
+                  ]
+```
 
 ___
 
